@@ -31,7 +31,8 @@ jobs:
           git config --local user.email 'scss@example.com'
           git config --local user.name 'SCSS Compiler'
           git add dist/
-          git diff-index --quiet HEAD || git commit -m 'SCSS Compile: ' + ${{ github.event.head_commit.message }}
+          commitMsg = printf 'SCSS Compile: %q' ${{ github.event.head_commit.message }}
+          git diff-index --quiet HEAD || git commit -m "$commitMsg"
 
       - name: Push changes
         uses: ad-m/github-push-action@master

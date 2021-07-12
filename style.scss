@@ -29,7 +29,29 @@ CREDITS TO:
   * ihatemath123
 */
 
+/* CONFIG: Variables for the rest of the css, in one place */
+
 $announcement: 2616321; // h-id of the announcement post
+$admins: 546163, 499928, 718378, 419930, 364963; // user ids of admins for admin logo
+
+$icons: (
+  "announcement": "https://i.ibb.co/M8xjPjS/megaphone.png",
+  "code": "https://icons.iconarchive.com/icons/thehoth/seo/256/seo-web-code-icon.png",
+  "warning": "https://www.pasadenalawgroup.com/wp-content/uploads/2018/11/ThinkstockPhotos-627455048-1.jpg",
+  "question": "https://icons.iconarchive.com/icons/hopstarter/sleek-xp-basic/256/Help-icon.png",
+  "poll": "https://icon-library.com/images/poll-icon/poll-icon-4.jpg",
+  "quality": "https://www.radiancetech.com/wp-content/uploads/2019/01/quality-icon-blue.png",
+  "css": "https://icons.iconarchive.com/icons/martz90/hex/512/css-3-icon.png",
+  "statistics": "https://icons.iconarchive.com/icons/graphicloads/flat-finance/256/statistics-market-icon.png",
+  "puzzle": "https://icons.iconarchive.com/icons/graphicloads/flat-finance/256/puzzle-icon.png",
+  "riddle": "https://icons.iconarchive.com/icons/graphicloads/flat-finance/256/puzzle-icon.png",
+  "sad": "https://icons.iconarchive.com/icons/google/noto-emoji-smileys/256/10032-sad-but-relieved-face-icon.png",
+  "latex": "https://icons.iconarchive.com/icons/untergunter/leaf-mimes/256/text-x-tex-icon.png",
+  
+  "anything": "https://www.svgrepo.com/show/257590/asterisk.svg"
+);
+
+/* END CONFIG */
 
 :root {
   --announcement-height: 1500px;
@@ -40,14 +62,11 @@ $announcement: 2616321; // h-id of the announcement post
 }
 
 /* ADMIN ICONS Credit to GG Otto*/
-a[href="/community/user/546163"]::before,  /* forester2015 */
-a[href="/community/user/499928"]::before,  /* AndrewC10 */
-a[href="/community/user/718378"]::before,  /* mathlearner2357 */
-a[href="/community/user/419930"]::before,  /* ihatemath123 */
-a[href="/community/user/364963"]::before   /* sealsrock */
-{
-  content: "X";
-  font-family: AoPS;
+@each $admin in admins {
+  a[href="/community/user/#{$admin}"]::before {
+    content: "X";
+    font-family: AoPS;
+  }
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
@@ -170,176 +189,21 @@ div#post-#{$announcement} .entrywrap {
   display: none;
 }
 
-/*[TEST] icon tags*/
-span[style="font-family:'icon-announcement'"]::before {
-  position: absolute;
-  content: "   ";
-  background-image: url("https://i.ibb.co/M8xjPjS/megaphone.png");
-  border-radius: 100px;
-  background-size: 32px 32px;
-  height: 32px;
-  width: 32px;
-  background-repeat: no-repeat;
-  float: right;
-  right: 5px;
-  top: -52px;
-}
-span[style="font-family:'icon-code'"]::before {
-  position: absolute;
-  content: "   ";
-  background-image: url("https://icons.iconarchive.com/icons/thehoth/seo/256/seo-web-code-icon.png");
-  border-radius: 100px;
-  background-size: 32px 32px;
-  height: 32px;
-  width: 32px;
-  background-repeat: no-repeat;
-  float: right;
-  right: 5px;
-  top: -52px;
-}
-span[style="font-family:'icon-warning'"]::before {
-  position: absolute;
-  content: "   ";
-  background-image: url("https://www.pasadenalawgroup.com/wp-content/uploads/2018/11/ThinkstockPhotos-627455048-1.jpg");
-  border-radius: 100px;
-  background-size: 32px 32px;
-  height: 32px;
-  width: 32px;
-  background-repeat: no-repeat;
-  float: right;
-  right: 5px;
-  top: -52px;
-}
-
-span[style="font-family:'icon-question'"]::before {
-  position: absolute;
-  content: "   ";
-  background-image: url("https://icons.iconarchive.com/icons/hopstarter/sleek-xp-basic/256/Help-icon.png");
-  border-radius: 100px;
-  background-size: 32px 32px;
-  height: 32px;
-  width: 32px;
-  background-repeat: no-repeat;
-  float: right;
-  right: 5px;
-  top: -52px;
-}
-span[style="font-family:'icon-poll'"]::before {
-  position: absolute;
-  content: "   ";
-  background-image: url("https://icon-library.com/images/poll-icon/poll-icon-4.jpg");
-  border-radius: 100px;
-  background-size: 32px 32px;
-  height: 32px;
-  width: 32px;
-  background-repeat: no-repeat;
-  float: right;
-  right: 5px;
-  top: -52px;
-}
-span[style="font-family:'icon-quality'"]::before {
-  position: absolute;
-  content: "   ";
-  background-image: url("https://www.radiancetech.com/wp-content/uploads/2019/01/quality-icon-blue.png");
-  border-radius: 100px;
-  background-size: 32px 32px;
-  height: 32px;
-  width: 32px;
-  background-repeat: no-repeat;
-  float: right;
-  right: 5px;
-  top: -52px;
-}
-span[style="font-family:'icon-css'"]::before {
-  position: absolute;
-  content: "   ";
-  background-image: url("https://icons.iconarchive.com/icons/martz90/hex/512/css-3-icon.png");
-  border-radius: 100px;
-  background-size: 32px 32px;
-  height: 32px;
-  width: 32px;
-  background-repeat: no-repeat;
-  float: right;
-  right: 5px;
-  top: -52px;
-}
-span[style="font-family:'icon-statistics'"]::before {
-  position: absolute;
-  content: "   ";
-  background-image: url("https://icons.iconarchive.com/icons/graphicloads/flat-finance/256/statistics-market-icon.png");
-  border-radius: 100px;
-  background-size: 32px 32px;
-  height: 32px;
-  width: 32px;
-  background-repeat: no-repeat;
-  float: right;
-  right: 5px;
-  top: -52px;
-}
-span[style="font-family:'icon-puzzle'"]::before {
-  position: absolute;
-  content: "   ";
-  background-image: url("https://icons.iconarchive.com/icons/graphicloads/flat-finance/256/puzzle-icon.png");
-  border-radius: 100px;
-  background-size: 32px 32px;
-  height: 32px;
-  width: 32px;
-  background-repeat: no-repeat;
-  float: right;
-  right: 5px;
-  top: -52px;
-}
-span[style="font-family:'icon-riddle'"]::before {
-  position: absolute;
-  content: "   ";
-  background-image: url("https://icons.iconarchive.com/icons/graphicloads/flat-finance/256/puzzle-icon.png");
-  border-radius: 100px;
-  background-size: 32px 32px;
-  height: 32px;
-  width: 32px;
-  background-repeat: no-repeat;
-  float: right;
-  right: 5px;
-  top: -52px;
-}
-span[style="font-family:'icon-sad'"]::before {
-  position: absolute;
-  content: "   ";
-  background-image: url("https://icons.iconarchive.com/icons/google/noto-emoji-smileys/256/10032-sad-but-relieved-face-icon.png");
-  border-radius: 100px;
-  background-size: 32px 32px;
-  height: 32px;
-  width: 32px;
-  background-repeat: no-repeat;
-  float: right;
-  right: 5px;
-  top: -52px;
-}
-span[style="font-family:'icon-anything'"]::before {
-  position: absolute;
-  content: "   ";
-  background-image: url("https://www.svgrepo.com/show/257590/asterisk.svg");
-  border-radius: 100px;
-  background-size: 32px 32px;
-  height: 32px;
-  width: 32px;
-  background-repeat: no-repeat;
-  float: right;
-  right: 5px;
-  top: -52px;
-}
-span[style="font-family:'icon-latex'"]::before {
-  position: absolute;
-  content: "   ";
-  background-image: url("https://icons.iconarchive.com/icons/untergunter/leaf-mimes/256/text-x-tex-icon.png");
-  border-radius: 100px;
-  background-size: 32px 32px;
-  height: 32px;
-  width: 32px;
-  background-repeat: no-repeat;
-  float: right;
-  right: 5px;
-  top: -52px;
+/* icon tags*/
+@each $name, $image in $icons {
+  span[style="font-family:'icon-#{$name}'"]::before {
+    position: absolute;
+    content: "   ";
+    background-image: url(#{$image});
+    border-radius: 100px;
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    background-repeat: no-repeat;
+    float: right;
+    right: 5px;
+    top: -52px;
+  }
 }
 
 

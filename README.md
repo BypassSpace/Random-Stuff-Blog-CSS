@@ -29,7 +29,7 @@ Alcumus.css (made by ihatemath123), with modifications done by:
 If you want to propose a change/fix a bug, please make a pull request here: https://github.com/BypassSpace/Random-Stuff-Blog-CSS
 */
 
-@import url("https://raw.githack.com/BypassSpace/Random-Stuff-Blog-CSS/main/style.css")
+@import url("https://cdn.jsdelivr.net/gh/BypassSpace/Random-Stuff-Blog-CSS/dist/style.css")
 ```
 
     
@@ -41,17 +41,20 @@ If you want to propose a change/fix a bug, please make a pull request here: http
         
 ```
 /*
-Alcumus.css (made by ihatemath123), with modifications done by:
-
-- AndrewC10
-- forester2015
-- sealsrock12
-- ihatemath123
-
-If you want to propose a change/fix a bug, please make a pull request here: https://github.com/BypassSpace/Random-Stuff-Blog-CSS
+FOURTH OF JULY.CSS
+Alcumus.css by ihatemath123
+Modified by forester2015, mathlearner2357, AndrewC10, and sealsrock
+Alcumus.css: https://github.com/BypassSpace/Random-Stuff-Blog-CSS/blob/main/alcumus-css.css
+CSS: https://github.com/BypassSpace/Random-Stuff-Blog-CSS/blob/main/style.scss
+4th of July.css: https://github.com/BypassSpace/Random-Stuff-Blog-CSS/blob/main/events/4th-of-july.css
+Colors:
+AoPS Theme Dark Blue: #1B365D
+Button Hover Color: #135B7B
+AoPS Teal: #009FAD
+AoPS Text Color: #CDEEF1
 */
 
-@import url("https://raw.githack.com/BypassSpace/Random-Stuff-Blog-CSS/main/events/4th-of-july.css")
+@import url("https://cdn.jsdelivr.net/gh/BypassSpace/Random-Stuff-Blog-CSS/events/4th-of-july.css")
 ```
 
     

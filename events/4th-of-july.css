@@ -4,9 +4,9 @@ FOURTH OF JULY.CSS
 Alcumus.css by ihatemath123
 Modified by forester2015, mathlearner2357, AndrewC10, and sealsrock
 
-Alcumus.css: "https://raw.githack.com/Coding-Bot-1/Random-Stuff-Blog-CSS/main/alcumus-css.css
-CSS: https://raw.githack.com/Coding-Bot-1/Random-Stuff-Blog-CSS/main/style.css
-4th of July.css: https://raw.githack.com/Coding-Bot-1/Random-Stuff-Blog-CSS/main/events/4th-of-july.css
+Alcumus.css: https://github.com/BypassSpace/Random-Stuff-Blog-CSS/blob/main/alcumus-css.css
+CSS: https://github.com/BypassSpace/Random-Stuff-Blog-CSS/blob/main/style.scss
+4th of July.css: https://github.com/BypassSpace/Random-Stuff-Blog-CSS/blob/main/events/4th-of-july.css
 
 Colors:
 AoPS Theme Dark Blue: #1B365D
@@ -16,7 +16,7 @@ AoPS Text Color: #CDEEF1
 */
 
 /* IMPORT MAIN CSS */
-@import url("https://raw.githack.com/BypassSpace/Random-Stuff-Blog-CSS/main/style.css");
+@import url("https://cdn.jsdelivr.net/gh/BypassSpace/Random-Stuff-Blog-CSS/dist/style.css");
 
 div #header {
   background-color: black !important;

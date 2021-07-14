@@ -63,7 +63,7 @@ $icons: (
 }
 
 /* ADMIN ICONS Credit to GG Otto*/
-@each $admin in admins {
+@each $admin in $admins {
   a[href="/community/user/#{$admin}"]::before {
     content: "X";
     font-family: AoPS;

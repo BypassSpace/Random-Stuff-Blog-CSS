@@ -31,7 +31,7 @@ If you want to propose a change/fix a bug, please make a pull request here: http
 
 @import url("https://bypassspace.github.io/Random-Stuff-Blog-CSS/dist/style.css")
 ```
-
+</details>
     
 </details>
 

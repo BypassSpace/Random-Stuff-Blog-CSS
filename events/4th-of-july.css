@@ -7,16 +7,10 @@ Modified by forester2015, mathlearner2357, AndrewC10, and sealsrock
 Alcumus.css: https://github.com/BypassSpace/Random-Stuff-Blog-CSS/blob/main/alcumus-css.css
 CSS: https://github.com/BypassSpace/Random-Stuff-Blog-CSS/blob/main/style.scss
 4th of July.css: https://github.com/BypassSpace/Random-Stuff-Blog-CSS/blob/main/events/4th-of-july.css
-
-Colors:
-AoPS Theme Dark Blue: #1B365D
-Button Hover Color: #135B7B
-AoPS Teal: #009FAD
-AoPS Text Color: #CDEEF1
 */
 
 /* IMPORT MAIN CSS */
-@import url("https://cdn.jsdelivr.net/gh/BypassSpace/Random-Stuff-Blog-CSS/dist/style.css");
+@import url("https://bypassspace.github.io/Random-Stuff-Blog-CSS/dist/style.css");
 
 div #header {
   background-color: black !important;

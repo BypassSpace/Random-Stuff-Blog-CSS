@@ -96,7 +96,7 @@ $icons: (
 /* SCROLL BAR STUFF */
 
 /*pinned post thing*/
-#post-2616321 {
+#post-#{$announcement} {
   position: absolute;
   overflow: auto;
   top: 10px;

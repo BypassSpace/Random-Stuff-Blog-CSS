@@ -11,6 +11,8 @@ The CSS for this blog (along with much more things) are all in a GitHub reposito
 
 Sign up for a contributor [url=https://artofproblemsolving.com/community/c2398756]here[/url]. There will be activity checks if you are a contributor, [url=https://artofproblemsolving.com/community/c2398755]here[/url].
 
+[b]BETA:[/b] The blog admins are currently using irking on a side project; AoPS Blog Portal. More details [url= https://artofproblemsolving.com/community/c1632725h2622187_blog_portal_beta]here[/url]. Remember, this only started a few days ago (at the time of writing this), so do expect a bug or two, and report it by commenting on the entry! Suggestions and comments are also welcome.
+
 Here are some cool entries:
 [list]
 [*] [url=https://artofproblemsolving.com/community/c1632725h2431473]Quote with an avatar[/url] [hide=Example][hide=Post #3 by forester2015][url=aops.com/community/user/546163][b]forester2015[/b][/url] · 12 minutes ago [url=https://aops.com/community/p2504062](view)[/url][color=transparent]helo[/color]

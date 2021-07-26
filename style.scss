@@ -273,51 +273,17 @@ div#left_navigation_box:last-child {
 }
 
 /* lock topic button & delete topic button */
-body
-  > div.aops-modal-wrapper
-  > div
-  > div
-  > div.aops-modal-noscroll
-  > div
-  > div
-  > div
-  > div.cmty-moderate-topic-buttons
-  > button:nth-child(1),
-body
-  > div.aops-modal-wrapper
-  > div
-  > div
-  > div.aops-modal-noscroll
-  > div
-  > div
-  > div
-  > div.cmty-moderate-topic-buttons
-  > button:nth-child(3) {
+
+> div.cmty-moderate-topic-buttons > button:nth-child(1),
+> div.cmty-moderate-topic-buttons > button:nth-child(3) {
   margin: 3px;
   background-color: var(--aops-theme);
 }
 
 /* lock topic/delete topic hover */
-body
-  > div.aops-modal-wrapper
-  > div
-  > div
-  > div.aops-modal-noscroll
-  > div
-  > div
-  > div
-  > div.cmty-moderate-topic-buttons
-  > button:nth-child(1):hover,
-body
-  > div.aops-modal-wrapper
-  > div
-  > div
-  > div.aops-modal-noscroll
-  > div
-  > div
-  > div
-  > div.cmty-moderate-topic-buttons
-  > button:nth-child(3):hover {
+
+> div.cmty-moderate-topic-buttons > button:nth-child(1):hover,
+> div.cmty-moderate-topic-buttons > button:nth-child(3):hover {
   background-color: var(--aops-button-hover);
 }
 

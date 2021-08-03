@@ -204,7 +204,7 @@ div#post-#{$announcement} .entrywrap {
 }
 
 /* annoucment post in archive section */ 
-.archive-month a[href="{$blog}h{$announcement}"] {
+.archive-month a[href="/{$blog}h{$announcement}"] {
   display: none; 
 }
 
@@ -288,8 +288,8 @@ div#left_navigation_box:last-child {
 
 /* lock topic/delete topic hover */
 
-> div.cmty-moderate-topic-buttons > button:nth-child(1):hover,
-> div.cmty-moderate-topic-buttons > button:nth-child(3):hover {
+.cmty-moderate-topic-buttons > button:nth-child(1):hover,
+.cmty-moderate-topic-buttons > button:nth-child(3):hover {
   background-color: var(--aops-button-hover);
 }
 

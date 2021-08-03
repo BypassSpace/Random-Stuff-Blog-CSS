@@ -35,6 +35,7 @@ CREDITS TO:
 
 $announcement: 2636864; // h-id of the announcement post
 $admins: 546163, 499928, 718378, 419930, 364963; // user ids of admins for admin logo
+$blog: c1632725;
 
 $icons: (
   "announcement": "https://i.ibb.co/M8xjPjS/megaphone.png",
@@ -200,6 +201,11 @@ div#post-#{$announcement} .entrywrap {
   background-repeat: no-repeat;
   margin-right: 5px;
   cursor: pointer;
+}
+
+/* annoucment post in archive section */ 
+.archive-month a[href="{$blog}h{$announcement}"] {
+  display: none; 
 }
 
 /* remove the "show comments" button for the announcement post */
